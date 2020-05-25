@@ -1,0 +1,34 @@
+>--ainm := ceist('An bhfuil tú réidh? ')
+
+scéal := ''
+
+cathain := ['An samhradh seo caite, ', 'Anuraidh, ', 'Dhá bhliain ó shin, ', 'Nuair a bhí mé óg, ', 'Fadó, fadó in Éireann, ']
+when := ['Last summer, ', 'Last year, ', 'Two years ago, ', 'When I was young, ', 'Long ago in Ireland, ']
+
+fáth := ['bhí mé ar mo laethanta saoire. ', 'bhí mé ag dul abhaile tar éis ceolchoirm. ', 'bhí mé sa siopa. ']
+reason := ['I was on holidays. ', 'I was going home after a concert. ', 'I was in a shop. ']
+
+aimsir := ['Bhí an grian ag scoilteadh na gcloch. ', 'Lá breá brothallach a bhí ann. ', 'Bhí scamall sa spéir. ', 'Bhí sé ag cur báistí, agus bhí mé fliuch go craiceann. ']
+weather := ['The sun was splitting the stones. ', 'It was a nice, sunny day. ', 'There were clouds in the sky. ', 'It was raining, and I was soaked through. ']
+
+áit := []
+
+cabhair := []
+
+go_tobanna := 0
+
+cathainUimh := randUimh@mata(0, fad@cathain)
+fáthUimh := randUimh@mata(0, fad@fáth)
+aimsirUimh := randUimh@mata(0, fad@aimsir)
+áitUimh := randUimh@mata(0, fad@áit)
+cabhairUimh := randUimh@mata(0, fad@cabhair)
+
+scéal += cathain[cathainUimh] 
+      + fáth[fáthUimh]
+      + aimsir[aimsirUimh]
+      + '\n\n\n The Accident\n\n '
+      + when[cathainUimh]
+      + reason[fáthUimh]
+      + weather[aimsirUimh]
+
+scríobh(' An Timpiste\n\n', scéal)
