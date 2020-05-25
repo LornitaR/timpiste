@@ -13,9 +13,9 @@ weather := ['The sun was splitting the stones. ', 'It was a nice, sunny day. ', 
 place := ['I was in a shop. ', 'I was at the seaside. ', 'I was in my bedroom. ']
 
 timpiste := ['shleamhnaigh mé ar an leac oighir ', 'thosaigh mé ag troid le mo chara ']
-accident := ['I slipped on the ice ', 'I started fighitng with my friend ']
+accident := ['I slipped on the ice ', 'I started fighting with my friend ']
 
-toradh := ['agus bhris mé mo chos. ', 'agus thosaigh mo shrón ag cur fola. ', 'agus bhuail mo cheann as an talamh. ']
+comhshníocht := ['agus bhris mé mo chos. ', 'agus thosaigh mo shrón ag cur fola. ', 'agus bhuail mo cheann as an talamh. ']
 consequence := ['and I broke my leg. ', 'and my nose started bleeding. ', 'and I hit my head off the ground. ']
 
 cabhair := ['Tabhair an banaltra X-ghá dom. ', 'Chuir fear fhios ar an otharcharr. ', 'Chuir an bhean glaoch ar mo thuismitheoirí. ']
@@ -27,9 +27,9 @@ cathainUimh := randUimh@mata(0, fad@cathain)
 fáthUimh := randUimh@mata(0, fad@fáth)
 aimsirUimh := randUimh@mata(0, fad@aimsir)
 áitUimh := randUimh@mata(0, fad@áit)
-cabhairUimh := randUimh@mata(0, fad@cabhair)
 timpisteUimh := randUimh@mata(0, fad@timpiste)
-toradhUimh := randUimh@mata(0, fad@toradh)
+comhshníochthUimh := randUimh@mata(0, fad@comhshníocht)
+cabhairUimh := randUimh@mata(0, fad@cabhair)
 
 scéal += cathain[cathainUimh] 
       + fáth[fáthUimh]
@@ -37,7 +37,7 @@ scéal += cathain[cathainUimh]
       + áit[áitUimh]
       + 'Go tobann, '
       + timpiste[timpisteUimh]
-      + toradh[toradhUimh]
+      + comhshníocht[comhshníochthUimh]
       + cabhair[cabhairUimh]
       + '\n\n\n The Accident\n\n '
       + when[cathainUimh]
@@ -46,7 +46,7 @@ scéal += cathain[cathainUimh]
       + place[áitUimh]
       + 'Suddenly, '
       + accident[timpisteUimh]
-      + consequence[toradhUimh]
+      + consequence[comhshníochthUimh]
       + assistance[cabhairUimh]
 
 scríobh(' An Timpiste\n\n', scéal)
