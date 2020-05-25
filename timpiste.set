@@ -9,7 +9,7 @@ reason := ['I was on holidays. ', 'I was going home after a concert. ']
 aimsir := ['Bhí an grian ag scoilteadh na gcloch. ', 'Lá breá brothallach a bhí ann. ', 'Bhí scamall sa spéir. ', 'Bhí sé ag cur báistí, agus bhí mé fliuch go craiceann. ']
 weather := ['The sun was splitting the stones. ', 'It was a nice, sunny day. ', 'There were clouds in the sky. ', 'It was raining, and I was soaked through. ']
 
-áit := ['Bhí mé sa siopa. ', 'Bhí mé ar cois farraige. ', 'Bhí mé i mo seomra chodladh. ']
+áit := ['Bhí mé sa siopa. ', 'Bhí mé ar cois farraige. ', 'Bhí mé i mo seomra leapa. ']
 place := ['I was in a shop. ', 'I was at the seaside. ', 'I was in my bedroom. ']
 
 timpiste := ['shleamhnaigh mé ar an leac oighir ', 'thosaigh mé ag troid le mo chara ']
