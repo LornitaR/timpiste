@@ -1,5 +1,3 @@
-scéal := ''
-
 cathain := ['An samhradh seo caite, ', 'Anuraidh, ', 'Dhá bhliain ó shin, ', 'Nuair a bhí mé óg, ', 'Fadó, fadó in Éireann, ']
 when := ['Last summer, ', 'Last year, ', 'Two years ago, ', 'When I was young, ', 'Long ago in Ireland, ']
 
@@ -9,17 +7,20 @@ reason := ['I was on holidays. ', 'I was going home after a concert. ']
 aimsir := ['Bhí an grian ag scoilteadh na gcloch. ', 'Lá breá brothallach a bhí ann. ', 'Bhí scamall sa spéir. ', 'Bhí sé ag cur báistí, agus bhí mé fliuch go craiceann. ']
 weather := ['The sun was splitting the stones. ', 'It was a nice, sunny day. ', 'There were clouds in the sky. ', 'It was raining, and I was soaked through. ']
 
-áit := ['Bhí mé sa siopa. ', 'Bhí mé ar cois farraige. ', 'Bhí mé i mo seomra leapa. ']
+áit := ['Bhí mé sa siopa. ', 'Bhí mé cois farraige. ', 'Bhí mé i mo sheomra leapa. ']
 place := ['I was in a shop. ', 'I was at the seaside. ', 'I was in my bedroom. ']
 
 timpiste := ['shleamhnaigh mé ar an leac oighir ', 'thosaigh mé ag troid le mo chara ']
 accident := ['I slipped on the ice ', 'I started fighting with my friend ']
 
-comhshníocht := ['agus bhris mé mo chos. ', 'agus thosaigh mo shrón ag cur fola. ', 'agus bhuail mo cheann as an talamh. ']
+comhshníocht := ['agus bhris mé mo chos. ', 'agus thosaigh mo shrón ag cur fola. ', 'agus bhuail mo cheann ar an talamh. ']
 consequence := ['and I broke my leg. ', 'and my nose started bleeding. ', 'and I hit my head off the ground. ']
 
-cabhair := ['Tabhair an banaltra X-ghá dom. ', 'Chuir fear fhios ar an otharcharr. ', 'Chuir an bhean glaoch ar mo thuismitheoirí. ']
+cabhair := ['Thug an banaltra X-ghá dom. ', 'Chuir fear fhios ar an otharcharr. ', 'Chuir an bhean glaoch ar mo thuismitheoirí. ']
 assistance := ['The nurse gave me an X-ray. ', 'A man called an ambulance. ', 'The woman called my parents. ']
+
+deireadh := ['Ní dhéanfaidh mé dearmad go deo ar an lá sin. ', 'Lá iontach a bhí ann. ']
+ending := ['I will never forget that day. ', 'It was a great day. ']
 
 go_tobanna := 0
 
@@ -30,23 +31,29 @@ aimsirUimh := randUimh@mata(0, fad@aimsir)
 timpisteUimh := randUimh@mata(0, fad@timpiste)
 comhshníochthUimh := randUimh@mata(0, fad@comhshníocht)
 cabhairUimh := randUimh@mata(0, fad@cabhair)
+deireadhUimh := randUimh@mata(0, fad@deireadh)
 
-scéal += cathain[cathainUimh] 
+scéal := 'An Timpiste\n\n'
+      + cathain[cathainUimh]
       + fáth[fáthUimh]
       + aimsir[aimsirUimh]
       + áit[áitUimh]
-      + 'Go tobann, '
+      + '\n\nGo tobann, '
       + timpiste[timpisteUimh]
       + comhshníocht[comhshníochthUimh]
       + cabhair[cabhairUimh]
-      + '\n\n\n The Accident\n\n '
+      + '\n\n'
+      + deireadh[deireadhUimh]
+      + '\n\n\nThe Accident\n\n'
       + when[cathainUimh]
       + reason[fáthUimh]
       + weather[aimsirUimh]
       + place[áitUimh]
-      + 'Suddenly, '
+      + '\n\nSuddenly, '
       + accident[timpisteUimh]
       + consequence[comhshníochthUimh]
       + assistance[cabhairUimh]
+      + '\n\n'
+      + ending[deireadhUimh]
 
-scríobh(' An Timpiste\n\n', scéal)
+scríobh(scéal)
