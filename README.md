@@ -1,4 +1,4 @@
-#Timpiste Generator#
+# Timpiste Generator #
 
 A repo to generate a classic **'timpiste'** essay _as_ _Gaeilge_
 
